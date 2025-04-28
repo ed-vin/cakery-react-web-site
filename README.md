@@ -2,6 +2,8 @@
 
 Welcome to the official repository for the **Lilla Bageriet** website! This project is a simple yet elegant website that showcases a bakery's offerings, including a gallery of products, information about the bakery, and contact details.
 
+## Link: https://ed-vin.github.io/cakery-react-web-site/
+
 ## Features
 
 - **Responsive Layout**: Designed to work seamlessly on desktop, tablet, and mobile.
