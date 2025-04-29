@@ -3,7 +3,7 @@ import React from 'react';
 function Header({ page, setPage }) {
   return (
     <header className="header">
-      <h1>❤️ Lilla Bageriet</h1>
+      <h1>Lilla Bageriet</h1>
       <nav className="nav">
         <button type="button" onClick={() => setPage('Start')} className={`nav-button ${page === 'Start' ? 'active' : ''}`}>
           Start
