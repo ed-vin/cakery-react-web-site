@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+//import './Menu.css'; // Valfritt om du vill ha separat CSS-fil
 
 const menu = {
   Bröd: [
@@ -28,28 +29,30 @@ function Menu() {
   const [selectedCategory, setSelectedCategory] = useState('Bröd');
 
   return (
-    <section className="menu-section">
-      <h2>Vår Meny</h2>
-      <nav className="nav category-nav">
-        {Object.keys(menu).map((category) => (
-          <button
-            key={category}
-            type="button"
-            className={`nav-button ${selectedCategory === category ? 'active' : ''}`}
-            onClick={() => setSelectedCategory(category)}
-          >
-            {categoryEmojis[category]} {category}
-          </button>
-        ))}
-      </nav>
+    <section className="menu-wrapper">
+      <h2 className="menu-title">Vår Meny</h2>
+      <div className="menu-section">
+        <nav className="nav category-nav">
+          {Object.keys(menu).map((category) => (
+            <button
+              key={category}
+              type="button"
+              className={`nav-button ${selectedCategory === category ? 'active' : ''}`}
+              onClick={() => setSelectedCategory(category)}
+            >
+              {categoryEmojis[category]} {category}
+            </button>
+          ))}
+        </nav>
 
-      <ul className="menu-list">
-        {menu[selectedCategory].map((item) => (
-          <li key={item.name} className="menu-item">
-            {categoryEmojis[selectedCategory]} {item.name} – {item.price}
-          </li>
-        ))}
-      </ul>
+        <ul className="menu-list">
+          {menu[selectedCategory].map((item) => (
+            <li key={item.name} className="menu-item">
+              {categoryEmojis[selectedCategory]} {item.name} – {item.price}
+            </li>
+          ))}
+        </ul>
+      </div>
     </section>
   );
 }
