@@ -18,3 +18,4 @@ This project is a simple website that showcases a bakery's offerings, including 
 - **CSS**: Styling the website to ensure a modern and clean design.
 - **Lightbox**: A simple, responsive lightbox for displaying images in full-screen mode.
 - **yet-another-react-lightbox**: A library used for handling the image lightbox functionality.
+- **Vite**: frontend build tool and development server that offers fast startup and hot module replacement (HMR) by leveraging native ES modules in the browser.
