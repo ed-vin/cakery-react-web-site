@@ -10,7 +10,7 @@ function Gallery({ galleryImages, setPhotoIndex, setIsOpen }) {
 
   return (
     <section className="gallery-section">
-      <h2>Kaffe & Kakor (AI)</h2>
+      <h2>Kaffe & Kakor</h2>
       <div className="gallery">
         {galleryImages.map((image, index) => (
           <button

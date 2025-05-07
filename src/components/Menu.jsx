@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-//import './Menu.css'; // Valfritt om du vill ha separat CSS-fil
 
 const menu = {
   Bröd: [

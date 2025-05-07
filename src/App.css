@@ -1,4 +1,4 @@
-/* === ROOT-OMSLAG === */
+/* === ROOT WRAPPER === */
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -6,7 +6,7 @@
   text-align: center;
 }
 
-/* === BAKGRUND & BODY === */
+/* === BACKGROUND & BODY === */
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
@@ -18,7 +18,8 @@ body {
   line-height: 1.6;
 }
 
-/* === LOGOTYP === */
+
+/* === LOGO === */
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -35,7 +36,7 @@ body {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
-/* === ANIMERAD LOGO === */
+/* === ANIMATED LOGO === */
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);
@@ -51,16 +52,16 @@ body {
   }
 }
 
-/* === APP-OMSLAG === */
+/* === MAIN APP CONTAINER === */
 .app {
   max-width: 800px;
   margin: auto;
   padding: 2rem;
-  background: rgba(255, 248, 240, 0.9); /* Bakgrundsfärg med lite genomskinlighet */
+  background: rgba(255, 248, 240, 0.8);
   border-radius: 16px;
   box-shadow: 0 4px 16px rgba(0,0,0,0.15);
   text-align: center;
-  backdrop-filter: blur(10px); /* Ger en mjuk bakgrundsblur */
+  backdrop-filter: blur(10px);
 }
 
 /* === HEADER === */
@@ -84,7 +85,7 @@ body {
   padding: 0.7rem 1.5rem;
   background-color: #f3d1b0;
   border: none;
-  border-radius: 20px; /* Mer rundade hörn */
+  border-radius: 20px;
   font-weight: bold;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -97,7 +98,7 @@ body {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* === KORT-KOMPONENT === */
+/* === CARD COMPONENT === */
 .card {
   padding: 2em;
   border-radius: 12px;
@@ -107,15 +108,15 @@ body {
 }
 
 .card:hover {
-  transform: translateY(-10px); /* Smidig uppåtrörelse vid hover */
+  transform: translateY(-10px);
 }
 
-/* === INFO-TEXT === */
+/* === INFO TEXT === */
 .read-the-docs {
   color: #888;
 }
 
-/* === MENYSEKTION === */
+/* === MENU SECTION === */
 .menu-section {
   background: #fff;
   padding: 2rem;
@@ -146,7 +147,7 @@ body {
   font-weight: bold;
 }
 
-/* === GALLERI === */
+/* === GALLERY SECTION === */
 .gallery-section {
   margin-top: 2.5rem;
   text-align: center;
@@ -156,7 +157,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 2rem; /* Större avstånd mellan bilder */
+  gap: 2rem;
   margin-top: 1rem;
 }
 
@@ -175,7 +176,7 @@ body {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-/* === OM OSS-SEKTION === */
+/* === ABOUT US SECTION === */
 .about-section {
   margin: 2.5rem auto;
   padding: 2rem;
@@ -203,7 +204,7 @@ body {
   color: #f7b267;
 }
 
-/* === KONTAKTSEKTION === */
+/* === CONTACT SECTION === */
 .contact-section {
   margin: 2.5rem auto;
   padding: 2rem;
@@ -233,4 +234,62 @@ body {
   border-top: 1px solid #f3d1b0;
   color: #666;
   text-align: center;
+}
+
+/* === Intro Text === */
+
+.intro-text {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+/*   background-color: #ffffff; */
+  border-radius: 8px;
+  padding: 20px;
+ 
+}
+.intro-text p {
+  text-align: left;
+} 
+
+/* === MOBILE RESPONSIVENESS === */
+@media (max-width: 768px) {
+  #root,
+  .app {
+    padding: 1rem;
+  }
+
+  .logo {
+    height: 4em;
+    padding: 1em;
+  }
+
+  .nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .nav-button {
+    width: 100%;
+    max-width: 280px;
+  }
+
+  .gallery {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .gallery-image {
+    width: 90%;
+    height: auto;
+  }
+
+  .about-section,
+  .contact-section,
+  .menu-section {
+    padding: 1.5rem 1rem;
+  }
+
+  .card {
+    padding: 1.5rem 1rem;
+  }
 }

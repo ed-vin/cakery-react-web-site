@@ -11,7 +11,7 @@ import croissant from './assets/semla.png';
 import chokladboll from './assets/chokladboll.png';
 import kanelbulle from './assets/kanelbulle.png';
 import fralla from './assets/fralla.png';
-import läsk from './assets/läsk.png';
+import läsk from './assets/surdegsbröd.png';
 
 const galleryImages = [
   { src: kaffe, alt: 'Kaffe' },
@@ -39,8 +39,8 @@ function App() {
             <h2>Välkommen till Lilla Bageriet</h2>
             <p>Vi erbjuder ett brett sortiment av nybakade bröd, bakverk och kaffe av högsta kvalitet. Kom och njut av våra läckerheter i en mysig atmosfär!</p>
           </section>
-          <Menu />
           <Gallery galleryImages={galleryImages} setPhotoIndex={setPhotoIndex} setIsOpen={setIsOpen} />
+          <Menu />
         </>
       )}
 
